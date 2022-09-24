@@ -30,7 +30,13 @@ h2 {
 }
 
 .main-logo {
-  width: 200px;
+  width: 10rem;
+  height: 10rem;
+}
+
+.network-link-img {
+  width: 4rem;
+  height: 4rem;
 }
 
 .link-ul {
@@ -251,4 +257,53 @@ h2 {
   animation-delay: -8s;
   transform-origin: 3vw -18vh;
   box-shadow: -2vmin 0 0.4731362552096905vmin currentColor;
+}
+
+/* Circular layout */
+.circular-navigation-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+  width: 30rem;
+}
+
+.circular-navigation {
+  position: relative;
+}
+
+.circular-navigation__circle {
+  /* Position */
+  position: absolute;
+  top: 0;
+
+  /*
+  3rem is the distance from the item to the trigger element.
+  Replace 0deg with 60deg, 180deg, 240deg, 300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is 360 / numberOfItems * indexOfItem
+  */
+
+  /* Must have the same size as the trigger element */
+  height: 2rem;
+  width: 2rem;
+  margin: 4rem;
+}
+
+.circular-navigation__content {
+  /*
+  Rotate it to make it displayed vertically
+  Replace -0deg with -60deg, -180deg, -240deg, -300deg for another item
+  in case you want to have a total of 6 menu items.
+  The formulation is -(360 / numberOfItems * indexOfItem)
+  */
+
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* Take full size */
+  height: 100%;
+  width: 100%;
 }
