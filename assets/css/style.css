@@ -62,7 +62,7 @@ h2 {
   height: 100vh;
   top: 0;
   left: 0;
-  background: #0d0d0d;
+  background: #151c34;
   overflow: hidden;
 }
 
@@ -306,4 +306,44 @@ h2 {
   /* Take full size */
   height: 100%;
   width: 100%;
+}
+
+/* custom button for links */
+
+.button-with-icon {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-with-icon__label {
+  margin-left: 0.5rem;
+}
+
+/* Ribbon */
+
+.corner-ribbon {
+  position: relative;
+}
+
+.corner-ribbon__inner {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+}
+
+.corner-ribbon__ribbon {
+  left: 1rem;
+  position: absolute;
+
+  height: 1rem;
+  width: 4rem;
+  transform: translate(-38px, -8px) rotate(-45deg);
+  background-color: rgb(56 182 255);
+  text-align: center;
 }
