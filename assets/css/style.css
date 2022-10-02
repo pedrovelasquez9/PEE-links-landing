@@ -1,6 +1,4 @@
 body {
-  height: 100vh;
-  overflow: hidden;
   background: rgb(56, 182, 255);
   background: radial-gradient(
     circle,
@@ -12,14 +10,28 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  main {
+    height: 100vh;
+  }
 }
 
 h1,
@@ -28,6 +40,7 @@ h2 {
   padding: 0;
   margin: 0;
   font-family: "Silkscreen", cursive;
+  text-align: center;
 }
 
 .main-logo {
@@ -58,13 +71,10 @@ h2 {
 }
 
 .background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
   top: 0;
   left: 0;
   background: #151c34;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .background span {
@@ -266,7 +276,6 @@ h2 {
   display: flex;
   justify-content: center;
   height: 30rem;
-  width: 30rem;
 }
 
 .circular-navigation {
@@ -339,7 +348,7 @@ h2 {
 .other-links-item {
   font-family: "Comic Neue", cursive;
   background: #fff1;
-  width: 24rem;
+  width: 70vw;
   border-radius: 5px;
   padding: 0.2rem 0 0.2rem 1rem;
 }
@@ -366,7 +375,7 @@ h2 {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
   font-family: "Comic Neue", cursive;
   color: #fff;
@@ -379,4 +388,5 @@ h2 {
   align-items: center;
   align-content: center;
   gap: 1rem;
+  width: 70vw;
 }
