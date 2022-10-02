@@ -73,6 +73,7 @@ h2 {
   left: 0;
   background: #151c34;
   overflow: hidden;
+  max-height: -webkit-fill-available;
 }
 
 .background span {
