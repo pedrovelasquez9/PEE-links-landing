@@ -18,6 +18,7 @@ networks.forEach((network, index) => {
 
   linkElement.href = network.link;
   linkElement.alt = network.name;
+  linkElement.target = "_blank";
 
   imageElement.src = network.imageSrc;
   imageElement.alt = network.name;
