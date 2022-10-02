@@ -21,17 +21,14 @@ main {
   padding: 0;
   width: 100%;
   margin: 0;
+  height: -webkit-fill-available;
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {
-  body {
-    height: -webkit-fill-available;
-    overflow-y: auto;
-    max-height: -webkit-fill-available;
-    overflow-x: hidden;
-  }
   main {
-    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 
@@ -75,7 +72,7 @@ h2 {
   top: 0;
   left: 0;
   background: #151c34;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .background span {
