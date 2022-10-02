@@ -25,12 +25,12 @@ main {
 
 @media (max-width: 600px) {
   body {
-    height: 100vh;
+    height: auto;
     overflow-y: auto;
     overflow-x: hidden;
   }
   main {
-    height: 100vh;
+    height: auto;
   }
 }
 
