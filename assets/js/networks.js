@@ -21,7 +21,7 @@ const networks = [
   },
   {
     name: "Twitter",
-    link: "https://twitter.com/prog_es",
+    link: "https://twitter.com/program_es",
     imageSrc: "./assets/images/twitter-icon.webp",
   },
   {
